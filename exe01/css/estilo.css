@@ -1,0 +1,57 @@
+body{
+    margin: 0px;/*Deixo tudo com 0 para facilitar na hora de mexer nos paddings e margins da página*/
+    padding: 0px;
+    font-family: sans-serif;
+    background: #34495e;
+}
+.caixa{/*tudo aqui irá servir para toda a caixa "form"*/
+    width: 300px;
+    padding: 40px;
+    position: absolute;/*permite que eu use left, right, bottom e top para posicionar a caixa*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/*vai deixar o elemento bem no meio da tela, o joga 50%
+    para cima no eixo y e 50% para um lado no eixo x*/
+    background:#191919;
+    text-align: center;
+}
+.caixa h1{
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.caixa input[type = "text"], .caixa input[type = password]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #12CBC4;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;/*vai servir para a transição do :focus*/
+}
+.caixa input[type = "text"]:focus, .caixa input[type = "password"]:focus{/*ocorrerá quando o usuário clicar aqui*/
+    width: 280px;
+    border-color: #2ecc71;
+}
+.caixa input[type='submit']{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #12CBC4;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;/*muda o estilo do cursor quando este estiver em cima do botão*/
+}
+.caixa input[type="submit"]:hover{/*ocorrerá quando o usuário passar o mouse por cima do elemento*/
+    background: #2ecc71;
+}
